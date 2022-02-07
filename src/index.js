@@ -2,7 +2,7 @@
 // You should implement your task here.
 
 module.exports = function towelSort(matrix) {
-  let currentItems
+  let towelSortNumbers
   let arrayTowelSortNumber = []
   if (matrix === undefined){ return []}
     else {
@@ -11,8 +11,8 @@ module.exports = function towelSort(matrix) {
           let columIndex = i % 2 === 0
           ? j
           : (matrix[i].length - j -1);
-          currentItems = ( matrix[i][columIndex])
-        arrayTowelSortNumber.push(currentItems)
+          towelSortNumbers = ( matrix[i][columIndex])
+        arrayTowelSortNumber.push(towelSortNumbers)
         }  
       }
     }
